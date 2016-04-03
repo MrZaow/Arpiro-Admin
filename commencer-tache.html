@@ -130,6 +130,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <li><a href="statistiques.html"><i class="fa fa-bar-chart"></i> <span>Statistiques</span></a></li>
             <li><a href="projets.html"><i class="fa fa-briefcase"></i> <span>Projets</span></a></li>
           </ul><!-- /.sidebar-menu -->
+        </section>
         <!-- /.sidebar -->
       </aside>
 
@@ -138,12 +139,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Mes tâches
+            Commencer une nouvelle tâche
           </h1>
-          <div class="col-md-offset-8 col-md-4">
-                <a href="commencer-tache.html"><button type="button" class="btn btn-primary"><i class="fa fa-plus-square"></i> Commencer une nouvelle tâche</button></a>
-            </div>
-          
         </section>
 
         <!-- Main content -->
@@ -153,43 +150,46 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           <div class="row">
             <div class="col-md-6">
-                <h4>Développement web pour le projet Site web Constellar</h4>
-                <p>Courte description de la tâche</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3">
-                <h1>12:34</h1>
-            </div>
-            <div class="col-md-3">
-                  <a class="btn btn-app">
-                    <i class="fa fa-play"></i> Play
-                  </a>
-                  <a class="btn btn-app">
-                    <i class="fa fa-stop"></i> Stop
-                  </a>
+              <div class="form-group">
+                <label>Projet</label>
+                <select class="form-control select2" style="width: 100%;">
+                  <option selected="selected">Logo Constellar</option>
+                  <option>Site Constellar</option>
+                  <option>Site Defroidmont</option>
+                  <option>Logo Genericorp</option>
+                </select>
+              </div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-6">
-                <h4>Graphisme pour le projet Logo Constellar</h4>
-                <p>Courte description de la tâche</p>
+              <div class="form-group">
+                <label>Catégorie</label>
+                <select class="form-control select2" style="width: 100%;">
+                  <option selected="selected">Développement</option>
+                  <option>Graphisme</option>
+                  <option>Marketing</option>
+                  <option>Ajustement de contenu</option>
+                </select>
+              </div>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-3">
-                <h1>00:42</h1>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Description courte</label>
+                <input type="text" class="form-control" placeholder="Entrer une courte description de la tâche">
+              </div>
             </div>
-            <div class="col-md-3">
-                  <a class="btn btn-app">
-                    <i class="fa fa-pause"></i> Pause
-                  </a>
-                  <a class="btn btn-app">
-                    <i class="fa fa-stop"></i> Stop
-                  </a>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Commencer la tâche</button>
+              </div>
             </div>
           </div>
 

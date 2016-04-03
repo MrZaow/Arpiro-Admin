@@ -127,8 +127,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <li class="header">GESTION DES HEURES</li>
             <!-- Optionally, you can add icons to the links -->
             <li class="active"><a href="index.html"><i class="fa fa-tasks"></i> <span>Mes tâches</span></a></li>
-            <li><a href="stats.html"><i class="fa fa-bar-chart"></i> <span>Statistiques</span></a></li>
-            
+            <li><a href="statistiques.html"><i class="fa fa-bar-chart"></i> <span>Statistiques</span></a></li>
+            <li><a href="projets.html"><i class="fa fa-briefcase"></i> <span>Projets</span></a></li>
           </ul><!-- /.sidebar-menu -->
         </section>
         <!-- /.sidebar -->
@@ -138,23 +138,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-          <h1>Statistiques générales</h1>
-
-          <div class="row">
-            <div class="col-md-offset-9 col-md-3">
-              <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semaine
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Jour</a></li>
-                  <li><a href="#">Mois</a></li>
-                  <li><a href="#">Trimestre</a></li>
-                  <li><a href="#">Année</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
+          <h1>
+            Commencer une nouvelle tâche
+          </h1>
         </section>
 
         <!-- Main content -->
@@ -163,57 +149,47 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Your Page Content Here -->
 
           <div class="row">
-            <div class="col-md-12">
-
-              <div class="col-md-4">
-                <h4>Arnaud <small><i class="fa fa-clock-o"></i> 1:41</small></h4>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Graphisme pour le projet Logo Constellar</h3>
-                  </div>
-                  <div class="panel-body">
-                    <p>Courte description de la tâche</p>
-                    <p><i class="fa fa-calendar"></i> 02/04/2016 <i class="fa fa-clock-o"></i> 1:41</p>
-                  </div>
-                </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Projet</label>
+                <select class="form-control select2" style="width: 100%;">
+                  <option selected="selected">Logo Constellar</option>
+                  <option>Site Constellar</option>
+                  <option>Site Defroidmont</option>
+                  <option>Logo Genericorp</option>
+                </select>
               </div>
+            </div>
+          </div>
 
-              <div class="col-md-4">
-                <h4>Robin <small><i class="fa fa-clock-o"></i> 1:09</small></h4>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Développement web pour le projet Site web Constellar</h3>
-                  </div>
-                  <div class="panel-body">
-                    <p>Courte description de la tâche</p>
-                    <p><i class="fa fa-calendar"></i> 02/04/2016 <i class="fa fa-clock-o"></i>  0:21</p>
-                  </div>
-                </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Développement web pour le projet Site web Genericorp</h3>
-                  </div>
-                  <div class="panel-body">
-                    <p>Courte description de la tâche</p>
-                    <p><i class="fa fa-calendar"></i> 02/04/2016 <i class="fa fa-clock-o"></i>  0:48</p>
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Tâche</label>
+                <select class="form-control select2" style="width: 100%;">
+                  <option selected="selected">Développement</option>
+                  <option>Graphisme</option>
+                  <option>Marketing</option>
+                  <option>Ajustement de contenu</option>
+                </select>
               </div>
+            </div>
+          </div>
 
-              <div class="col-md-4">
-                <h4>Pierre <small><i class="fa fa-clock-o"></i> 2:19</small></h4>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Développement web pour le projet Site web Genericorp</h3>
-                  </div>
-                  <div class="panel-body">
-                    <p>Courte description de la tâche</p>
-                    <p><i class="fa fa-calendar"></i> 02/04/2016 <i class="fa fa-clock-o"></i>  2:19</p>
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Description courte</label>
+                <input type="text" class="form-control" placeholder="Bla bla bla">
               </div>
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Modifier la tâche</button>
+              </div>
             </div>
           </div>
 
@@ -242,14 +218,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="dist/js/app.min.js"></script>
     <!-- Sparkline -->
     <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
-
-    <script>
-    //INITIALIZE SPARKLINE CHARTS
-        $(".sparkline").each(function () {
-          var $this = $(this);
-          $this.sparkline('html', $this.data());
-        });
-    </script>
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
          Both of these plugins are recommended to enhance the
